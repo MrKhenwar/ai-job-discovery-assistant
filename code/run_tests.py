@@ -59,31 +59,40 @@ def run_all():
     (TESTS / "results.md").write_text("\n".join(rows) + "\n", encoding="utf-8")
 
 
-def run_versions(n):
+def run_versions(n, workers=10):
+    from concurrent.futures import ThreadPoolExecutor
+
     cases = [c for c in json.loads((TESTS / "inputs.json").read_text(encoding="utf-8")) if c["type"] == "Normal"]
     p1 = load_prompt(PROMPTS / "final" / "P1_profile_extractor.txt")
-    profiles = []
-    for c in cases:
-        prof = parse_json(call_llm(p1["system"], fill(p1["user"], candidate_text=c["text"]), p1["temperature"]), strict=False)
-        profiles.append(json.dumps(prof, ensure_ascii=False))
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        profiles = list(ex.map(
+            lambda c: json.dumps(
+                parse_json(call_llm(p1["system"], fill(p1["user"], candidate_text=c["text"]), p1["temperature"]), strict=False),
+                ensure_ascii=False),
+            cases))
+
     rows = [["version", "runs", "valid_json_pct", "schema_ok_pct", "avg_top_score_stdev"]]
     for v in ("v1", "v2", "v3"):
         p2 = load_prompt(PROMPTS / v / "P2_role_recommender.txt")
-        valid = schema = total = 0
+        tasks = [pj for pj in profiles for _ in range(n)]
+
+        def one_call(pj):
+            raw = call_llm(p2["system"], fill(p2["user"], profile_json=pj), p2["temperature"])
+            try:
+                data = parse_json(raw, strict=True)
+                return (True, roles_schema_ok(data), data["roles"][0]["fit_score"] if roles_schema_ok(data) else None)
+            except json.JSONDecodeError:
+                return (False, False, None)
+
+        with ThreadPoolExecutor(max_workers=workers) as ex:
+            call_results = list(ex.map(one_call, tasks))
+
+        valid = sum(1 for ok, _, _ in call_results if ok)
+        schema = sum(1 for _, ok, _ in call_results if ok)
+        total = len(call_results)
         sd = []
-        for pj in profiles:
-            tops = []
-            for _ in range(n):
-                total += 1
-                raw = call_llm(p2["system"], fill(p2["user"], profile_json=pj), p2["temperature"])
-                try:
-                    data = parse_json(raw, strict=True)
-                    valid += 1
-                    if roles_schema_ok(data):
-                        schema += 1
-                        tops.append(data["roles"][0]["fit_score"])
-                except json.JSONDecodeError:
-                    pass
+        for i, pj in enumerate(profiles):
+            tops = [call_results[i * n + k][2] for k in range(n) if call_results[i * n + k][2] is not None]
             if len(tops) > 1:
                 sd.append(statistics.pstdev(tops))
         rows.append([v, total, round(100 * valid / total, 1), round(100 * schema / total, 1),

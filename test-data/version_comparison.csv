@@ -1,0 +1,4 @@
+version,runs,valid_json_pct,schema_ok_pct,avg_top_score_stdev
+v1,60,0.0,0.0,n/a
+v2,60,98.3,58.3,4.28
+v3,60,100.0,100.0,7.51
