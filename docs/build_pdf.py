@@ -198,9 +198,12 @@ s += [P("6. Supporting document", H1)] + tech_report()[1:] + [PageBreak()]
 
 s += [P("7. Team contribution", H1)]
 s.append(table([["Member name", "Enrollment no.", "Role", "Tasks done in Milestone 2", "Evidence", "Contribution (%)"],
-  [FILL("name"), FILL("S24CSEU____"), FILL("role"), FILL("specific tasks"), FILL("file, commit or prompt ID"), FILL("%")],
-  [FILL("name"), FILL("S24CSEU____"), FILL("role"), FILL("specific tasks"), FILL("file, commit or prompt ID"), FILL("%")],
-  [FILL("name"), FILL("S24CSEU____"), FILL("role"), FILL("specific tasks"), FILL("file, commit or prompt ID"), FILL("%")]], [2.6, 2.6, 2.2, 4, 3.4, 2.2]))
+  ["Vidit Raj Khenwar", "S24CSEU0178", "Team lead; prompts and pipeline",
+   "Designed and iterated P1/P2/P3 prompts (v1-v3 of P2), built the pipeline and LLM wrapper, deployed the app to Streamlit Community Cloud",
+   "prompts/final/, code/pipeline.py, code/llm.py, deployed link", "55"],
+  ["Wafiq Ahsan", "S24CSEU0229", "Testing and documentation",
+   "Wrote the 13-case test suite and inputs, ran the version comparison, wrote README/CHANGELOG and the Milestone 2 report",
+   "test-data/inputs.json, test-data/results.md, docs/build_pdf.py, README.md", "45"]], [2.6, 2.6, 2.2, 4, 3.4, 2.2]))
 s.append(P("Every member owns at least one specific task with evidence. Percentages add up to 100. All members agree to this table.", T))
 
 doc(OUT / f"M2_{TEAM_NAME}_AIJobDiscoveryAssistant.pdf", s)
