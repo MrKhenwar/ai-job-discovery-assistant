@@ -17,7 +17,7 @@ def _get_client():
         key = os.environ.get("GEMINI_API_KEY")
         if not key:
             raise RuntimeError("Set GEMINI_API_KEY in your environment (see .env.example).")
-        _client = genai.Client(api_key=key, http_options={"api_version": "v1beta"})
+        _client = genai.Client(api_key=key, http_options={"api_version": "v1beta", "timeout": 45_000})
     return _client
 
 
@@ -54,5 +54,11 @@ def call_llm(system: str, user: str, temperature=None) -> str:
         except errors.ServerError:
             if attempt < attempts - 1:
                 time.sleep(15 * (attempt + 1))
+                continue
+            raise
+        except Exception:
+            # Network hang/timeout from the underlying HTTP client (not a typed API error).
+            if attempt < attempts - 1:
+                time.sleep(10)
                 continue
             raise

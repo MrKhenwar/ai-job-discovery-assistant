@@ -5,6 +5,7 @@ A 3-prompt pipeline that turns a free-text self-description into 5 ranked job ro
 - Team ID: [FILL]
 - Team name: Wadit
 - Team members: S24CSEU0178 - Vidit Raj Khenwar (leader), S24CSEU0229 - Wafiq Ahsan
+- Repository: https://github.com/MrKhenwar/ai-job-discovery-assistant
 - Prototype link: [FILL after deploying]
 - Reel link: [FILL]
 
