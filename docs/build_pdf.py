@@ -20,6 +20,9 @@ T = ParagraphStyle("T", parent=B, fontSize=8, leading=10)
 FILL = lambda s: f'<font color="#C00000"><b>[FILL: {escape(s)}]</b></font>'
 
 TEAM_NAME = "Wadit"
+TEAM_ID = "WADIT"
+BATCH = "2"
+FACULTY_NAME = "Sonal"
 MEMBERS = "S24CSEU0178 - Vidit Raj Khenwar (leader)<br/>S24CSEU0229 - Wafiq Ahsan"
 PROTOTYPE_LINK = "https://ai-job-discovery-wadit.streamlit.app/"
 REPO_LINK = "https://github.com/MrKhenwar/ai-job-discovery-assistant"
@@ -109,9 +112,9 @@ def tech_report():
 # ---------- Milestone 2 PDF ----------
 s = []
 s += [P("1. Cover page", H1), Spacer(1, 6), P(TITLE, ParagraphStyle("t", parent=H1, fontSize=22)), P("Prompt Design and Demonstration - Milestone 2", H2)]
-s.append(table([["Team ID", FILL("Team ID from Milestone 1")], ["Team name", TEAM_NAME],
-    ["Project title", TITLE], ["Batch", FILL("e.g. B13-24")],
-    ["Faculty name", FILL("faculty name")], ["Members", MEMBERS],
+s.append(table([["Team ID", TEAM_ID], ["Team name", TEAM_NAME],
+    ["Project title", TITLE], ["Batch", BATCH],
+    ["Faculty name", FACULTY_NAME], ["Members", MEMBERS],
     ["Prototype link", PROTOTYPE_LINK], ["Repository link", REPO_LINK], ["Reel link", FILL("link") + " (length " + FILL("seconds, 90-150") + ")"]], [3.5, 13.5], head=False))
 s.append(PageBreak())
 
