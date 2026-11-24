@@ -1,0 +1,10 @@
+digraph G { rankdir=LR; node [shape=box, style="rounded,filled", fillcolor="#EEF3FF", fontname="Helvetica", fontsize=10];
+B [label="Browser", fillcolor="#FFF4D6"];
+S [label="Streamlit app\ncode/app.py"];
+PL [label="Pipeline\ncode/pipeline.py"];
+PF [label="Prompt files\nprompts/final/*.txt", fillcolor="#F3E8FF"];
+L [label="LLM wrapper\ncode/llm.py"];
+G [label="Gemini 2.5 Flash API", fillcolor="#DFF5E1"];
+T [label="Test runner\ncode/run_tests.py"];
+TD [label="test-data/\ninputs + saved outputs", fillcolor="#F3E8FF"];
+B->S->PL; PL->PF [label="load"]; PL->L->G; T->PL; T->TD; }

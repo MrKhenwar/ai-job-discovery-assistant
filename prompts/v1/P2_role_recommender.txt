@@ -1,0 +1,9 @@
+[SETTINGS]
+temperature=default
+
+[SYSTEM]
+none
+
+[USER]
+Suggest suitable job roles for this candidate:
+{profile_json}

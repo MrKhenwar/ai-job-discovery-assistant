@@ -1,0 +1,6 @@
+digraph G { rankdir=LR; node [shape=record, style=filled, fillcolor="#EEF3FF", fontname="Helvetica", fontsize=10];
+I [label="{INPUT|free text: skills, education,\nexperience, location, goal}", fillcolor="#FFF4D6"];
+P1 [label="{P1|OUT: profile JSON\n(skills, education, level,\nyears, targets, location,\nwork_mode, flags)}"];
+P2 [label="{P2|OUT: roles JSON\n(5 x title, fit_score, why,\nsearch_keywords, skill_gaps)}"];
+P3 [label="{P3|OUT: plain text plan\n(top pick, portals, 3 actions,\nskill gaps)}"];
+I->P1->P2->P3; }

@@ -1,0 +1,8 @@
+digraph G { rankdir=TB; node [shape=box, style="rounded,filled", fillcolor="#EEF3FF", fontname="Helvetica", fontsize=11];
+T [label="Task: help a candidate find suitable jobs", fillcolor="#FFF4D6"];
+S1 [label="1. Understand the person\n(extract skills, level, location, mode)"];
+S2 [label="2. Match to roles\n(rank 5 roles, score, gaps, keywords)"];
+S3 [label="3. Make it actionable\n(where to search, 3 actions, gaps)"];
+G1 [label="Guard: reject empty/invalid/injection", fillcolor="#FFE0E0"];
+G2 [label="Guard: JSON schema check", fillcolor="#FFE0E0"];
+T->S1; T->S2; T->S3; S1->G1 [style=dashed]; S2->G2 [style=dashed]; }

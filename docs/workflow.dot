@@ -1,0 +1,9 @@
+digraph G { rankdir=LR; node [shape=box, style="rounded,filled", fillcolor="#EEF3FF", fontname="Helvetica", fontsize=11]; edge [fontname="Helvetica", fontsize=9];
+U [label="User text", fillcolor="#FFF4D6"];
+P1 [label="P1 Profile Extractor\ntemp 0.2, 2 examples"];
+D [label="status = ok?", shape=diamond, fillcolor="#FFFFFF"];
+A [label="Ask follow-up question\n(pipeline stops)", fillcolor="#FFE0E0"];
+P2 [label="P2 Role Recommender\ntemp 0.2, rubric + example"];
+P3 [label="P3 Search Plan Writer\ntemp 0.4"];
+O [label="Roles + 7-day plan", fillcolor="#DFF5E1"];
+U->P1; P1->D [label="profile JSON"]; D->A [label="insufficient"]; D->P2 [label="ok"]; P2->P3 [label="roles JSON"]; P3->O; }
