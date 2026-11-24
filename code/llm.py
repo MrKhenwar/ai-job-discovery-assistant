@@ -5,7 +5,7 @@ import time
 from google import genai
 from google.genai import errors, types
 
-MODEL = os.environ.get("MODEL_NAME", "gemini-3.5-flash")
+MODEL = os.environ.get("MODEL_NAME", "gemini-3.5-flash-lite")
 MIN_INTERVAL = float(os.environ.get("LLM_MIN_INTERVAL_SEC", "13"))  # free tier: 5 req/min
 _client = None
 _last_call = 0.0
@@ -36,7 +36,8 @@ def call_llm(system: str, user: str, temperature=None) -> str:
         cfg["system_instruction"] = system
     if temperature is not None:
         cfg["temperature"] = temperature
-    for attempt in range(5):
+    attempts = 8
+    for attempt in range(attempts):
         _throttle()
         try:
             resp = _get_client().models.generate_content(
@@ -46,12 +47,12 @@ def call_llm(system: str, user: str, temperature=None) -> str:
             )
             return resp.text or ""
         except errors.ClientError as e:
-            if e.code == 429 and attempt < 4:
-                time.sleep(15)
+            if e.code == 429 and attempt < attempts - 1:
+                time.sleep(20)
                 continue
             raise
         except errors.ServerError:
-            if attempt < 4:
-                time.sleep(10)
+            if attempt < attempts - 1:
+                time.sleep(15 * (attempt + 1))
                 continue
             raise

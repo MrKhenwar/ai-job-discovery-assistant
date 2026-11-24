@@ -51,10 +51,10 @@ def tech_report():
     s = [P("Technical Report: " + TITLE, H1),
          P("Team: " + FILL("team name") + " &nbsp; Project: SCSE4041 Mini Project", B),
          P("1. Architecture", H2),
-         P("A browser user types free text into a Streamlit app (code/app.py). The pipeline (code/pipeline.py) loads three prompt files from prompts/final/ and calls Gemini 3.5 Flash through a small wrapper (code/llm.py). A test runner (code/run_tests.py) feeds saved inputs through the same pipeline and stores outputs in test-data/. The API key is read from an environment variable and is not stored in the repository."),
+         P("A browser user types free text into a Streamlit app (code/app.py). The pipeline (code/pipeline.py) loads three prompt files from prompts/final/ and calls Gemini 3.5 Flash-Lite through a small wrapper (code/llm.py). A test runner (code/run_tests.py) feeds saved inputs through the same pipeline and stores outputs in test-data/. The API key is read from an environment variable and is not stored in the repository."),
          img("architecture.png", 16.5),
          P("2. Tools and models", H2),
-         P("Gemini 3.5 Flash (Google AI Studio API) for all three prompts; Python 3, Streamlit for the interface, Graphviz for diagrams. Flash was chosen for low latency and free-tier availability; each run makes three short calls. (Originally built against Gemini 2.5 Flash; switched to 3.5 Flash after 2.5 Flash's Oct 2026 deprecation cut its free-tier quota to 20 requests/day.)"),
+         P("Gemini 3.5 Flash-Lite (Google AI Studio API) for all three prompts; Python 3, Streamlit for the interface, Graphviz for diagrams. Flash-Lite was chosen for low latency and free-tier availability; each run makes three short calls. (Originally built against Gemini 2.5 Flash; that model was deprecated Oct 16 2026 and its free-tier quota fell to 20 requests/day on this account, so we moved to Gemini 3.5 Flash-Lite, which had separate, usable quota.)"),
          P("3. Prompt design", H2),
          P("The task is split into three prompts so each has one job and a checkable output. P1 turns free text into a profile JSON and refuses when information is insufficient (guards against empty input, gibberish and prompt injection by treating the user text as data). P2 ranks exactly 5 roles with a fixed scoring rubric and JSON schema. P3 writes a plain-text search plan from the first two outputs. P2 was iterated through three versions: v1 one-line prompt, v2 rubric plus JSON schema, v3 one worked example, explicit constraints and temperature 0.2 (full text in Milestone 2 PDF, Section 3)."),
          P("4. Test results", H2),
@@ -77,7 +77,7 @@ s += [P("2. Prompt and solution design", H1), P("(a) Overview", H2)]
 s += [P("<b>Problem and users.</b> Students and early-career job seekers in India often do not know which roles fit their skills or where to start searching. The tool takes a short free-text description and returns matching roles and a concrete search plan."),
       P("<b>Input and output.</b> Input: free text (skills, education, experience, location, goal). Output: profile JSON, 5 ranked roles with fit score, reasons, search keywords and skill gaps, then a 180-word search plan."),
       P("<b>Prompts and why.</b> 3 prompts in a chain. One prompt doing everything gave long, unchecked answers; splitting gives a JSON checkpoint after each step, lets us stop early on invalid input, and lets us improve one step at a time."),
-      P("<b>Tool and model.</b> Gemini 3.5 Flash via Google AI Studio API: fast, free tier, follows JSON-only instructions well at low temperature."),
+      P("<b>Tool and model.</b> Gemini 3.5 Flash-Lite via Google AI Studio API: fast, free tier, follows JSON-only instructions well at low temperature."),
       P("<b>What changed since Milestone 1.</b> " + FILL("write what really changed, e.g. added P1/P3, insufficient-info path, JSON schema, test runner, Streamlit prototype")),
       P("(b) Diagrams", H2), P("Prompt workflow", H3), img("workflow.png"), P("Task decomposition", H3), img("decomposition.png", 11),
       P("Input-output flow", H3), img("io_flow.png"), P("System architecture", H3), img("architecture.png"),
@@ -93,7 +93,7 @@ for pid, name, path, step, purpose, var, varhold, nex, fmt in sheets:
     temp = sec["SETTINGS"].split("=")[1]
     s.append(KeepTogether([P(f"Prompt sheet {pid}: {name}", H3), table([
         ["Prompt ID and name", f"{pid} {name}"], ["Step in workflow", step], ["Purpose", purpose],
-        ["Tool and model", "Gemini 3.5 Flash, Google AI Studio API"], ["Settings", f"temperature {temp}, other settings default"],
+        ["Tool and model", "Gemini 3.5 Flash-Lite, Google AI Studio API"], ["Settings", f"temperature {temp}, other settings default"],
         ["Variables", f"{{{var}}}: {varhold}"], ["Examples included", nex], ["Output format", fmt]], [4, 13], head=False)]))
     s += [P("<b>Full system prompt</b>", T), code(sec["SYSTEM"]), Spacer(1, 4), P("<b>Full user prompt template</b>", T), code(sec["USER"]), Spacer(1, 4),
           P("<b>Sample run</b> (real input and actual output): " + FILL(f"run the app, paste the exact input and the exact {pid} output as text"), T), Spacer(1, 8)]
