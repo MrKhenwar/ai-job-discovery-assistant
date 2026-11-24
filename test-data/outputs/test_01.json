@@ -1,0 +1,103 @@
+{
+  "case": {
+    "id": 1,
+    "type": "Normal",
+    "short": "Final-year BCA, Python/SQL/Power BI, Pune",
+    "expect": "ok",
+    "expected_text": "5 data/analytics roles, valid JSON, plan with 3 portals",
+    "text": "Final year BCA student, know Python, SQL and Power BI. Looking for data analyst jobs in Pune."
+  },
+  "result": {
+    "input": "Final year BCA student, know Python, SQL and Power BI. Looking for data analyst jobs in Pune.",
+    "stopped_at": null,
+    "errors": [],
+    "p1_raw": "{\"status\":\"ok\",\"skills\":[\"Python\",\"SQL\",\"Power BI\"],\"education\":\"BCA (final year)\",\"experience_level\":\"student\",\"years_experience\":0,\"target_roles\":[\"Data Analyst\"],\"location\":\"Pune\",\"work_mode\":\"any\",\"flags\":[]}",
+    "profile": {
+      "status": "ok",
+      "skills": [
+        "Python",
+        "SQL",
+        "Power BI"
+      ],
+      "education": "BCA (final year)",
+      "experience_level": "student",
+      "years_experience": 0,
+      "target_roles": [
+        "Data Analyst"
+      ],
+      "location": "Pune",
+      "work_mode": "any",
+      "flags": []
+    },
+    "p2_raw": "{\"roles\":[{\"title\":\"Data Analyst Intern\",\"fit_score\":100,\"why\":\"Python, SQL and Power BI cover the core analytical toolkit, aligning perfectly with the candidate’s Data Analyst focus.\",\"search_keywords\":[\"data analyst intern Pune\",\"python sql power bi intern\",\"junior data analyst fresher\"],\"skill_gaps\":[]},{\"title\":\"Junior Data Analyst\",\"fit_score\":80,\"why\":\"Python, SQL and Power BI provide strong analytical foundations, while the role also expects Excel proficiency.\",\"search_keywords\":[\"junior data analyst Pune\",\"entry level data analyst\",\"sql python analyst fresher\"],\"skill_gaps\":[\"Excel\"]},{\"title\":\"Business Intelligence Intern\",\"fit_score\":75,\"why\":\"SQL and Power BI match the core BI stack, though the candidate would need to add Tableau for full coverage.\",\"search_keywords\":[\"business intelligence intern Pune\",\"sql power bi internship\",\"bi intern fresher\"],\"skill_gaps\":[\"Tableau\"]},{\"title\":\"Reporting Analyst Intern\",\"fit_score\":75,\"why\":\"SQL and Power BI are central to reporting tasks, but the candidate lacks Excel experience needed for this role.\",\"search_keywords\":[\"reporting analyst intern Pune\",\"sql power bi reporting intern\",\"reporting intern fresher\"],\"skill_gaps\":[\"Excel\"]},{\"title\":\"Data Visualization Intern\",\"fit_score\":75,\"why\":\"Power BI and Python are key for visualisation work, yet Tableau knowledge is missing.\",\"search_keywords\":[\"data visualization intern Pune\",\"power bi python intern\",\"visualization intern fresher\"],\"skill_gaps\":[\"Tableau\"]}]}",
+    "roles": {
+      "roles": [
+        {
+          "title": "Data Analyst Intern",
+          "fit_score": 100,
+          "why": "Python, SQL and Power BI cover the core analytical toolkit, aligning perfectly with the candidate’s Data Analyst focus.",
+          "search_keywords": [
+            "data analyst intern Pune",
+            "python sql power bi intern",
+            "junior data analyst fresher"
+          ],
+          "skill_gaps": []
+        },
+        {
+          "title": "Junior Data Analyst",
+          "fit_score": 80,
+          "why": "Python, SQL and Power BI provide strong analytical foundations, while the role also expects Excel proficiency.",
+          "search_keywords": [
+            "junior data analyst Pune",
+            "entry level data analyst",
+            "sql python analyst fresher"
+          ],
+          "skill_gaps": [
+            "Excel"
+          ]
+        },
+        {
+          "title": "Business Intelligence Intern",
+          "fit_score": 75,
+          "why": "SQL and Power BI match the core BI stack, though the candidate would need to add Tableau for full coverage.",
+          "search_keywords": [
+            "business intelligence intern Pune",
+            "sql power bi internship",
+            "bi intern fresher"
+          ],
+          "skill_gaps": [
+            "Tableau"
+          ]
+        },
+        {
+          "title": "Reporting Analyst Intern",
+          "fit_score": 75,
+          "why": "SQL and Power BI are central to reporting tasks, but the candidate lacks Excel experience needed for this role.",
+          "search_keywords": [
+            "reporting analyst intern Pune",
+            "sql power bi reporting intern",
+            "reporting intern fresher"
+          ],
+          "skill_gaps": [
+            "Excel"
+          ]
+        },
+        {
+          "title": "Data Visualization Intern",
+          "fit_score": 75,
+          "why": "Power BI and Python are key for visualisation work, yet Tableau knowledge is missing.",
+          "search_keywords": [
+            "data visualization intern Pune",
+            "power bi python intern",
+            "visualization intern fresher"
+          ],
+          "skill_gaps": [
+            "Tableau"
+          ]
+        }
+      ]
+    },
+    "plan": "TOP PICK: Data Analyst Intern – Python, SQL and Power BI cover the core analytical toolkit, aligning perfectly with the candidate’s Data Analyst focus.  \nWHERE TO SEARCH:  \n- LinkedIn: \"data analyst intern Pune OR python sql power bi intern OR junior data analyst fresher\"  \n- Naukri: \"data analyst intern Pune OR python sql power bi intern OR junior data analyst fresher\"  \n- Indeed: \"data analyst intern Pune OR python sql power bi intern OR junior data analyst fresher\"  \nTHIS WEEK:  \n1. Update resume and LinkedIn profile to highlight Python, SQL, Power BI projects.  \n2. Build a small data‑analysis project (e.g., sales dashboard) and publish it on GitHub.  \n3. Submit applications to at least 10 Data Analyst Intern listings on the three portals with a tailored cover letter.  \nSKILL GAPS TO CLOSE: Excel, Tableau"
+  },
+  "auto_pass": true
+}

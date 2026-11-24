@@ -1,0 +1,109 @@
+{
+  "case": {
+    "id": 3,
+    "type": "Normal",
+    "short": "Marketing grad, SEO, Delhi",
+    "expect": "ok",
+    "expected_text": "5 SEO/digital marketing roles",
+    "text": "BBA marketing graduate with 6 months internship in SEO and content writing. Based in Delhi, open to hybrid roles."
+  },
+  "result": {
+    "input": "BBA marketing graduate with 6 months internship in SEO and content writing. Based in Delhi, open to hybrid roles.",
+    "stopped_at": null,
+    "errors": [],
+    "p1_raw": "{\"status\":\"ok\",\"skills\":[\"SEO\",\"Content Writing\"],\"education\":\"BBA (Marketing)\",\"experience_level\":\"fresher\",\"years_experience\":0.5,\"target_roles\":[],\"location\":\"Delhi\",\"work_mode\":\"hybrid\",\"flags\":[]}",
+    "profile": {
+      "status": "ok",
+      "skills": [
+        "SEO",
+        "Content Writing"
+      ],
+      "education": "BBA (Marketing)",
+      "experience_level": "fresher",
+      "years_experience": 0.5,
+      "target_roles": [],
+      "location": "Delhi",
+      "work_mode": "hybrid",
+      "flags": []
+    },
+    "p2_raw": "{\"roles\":[{\"title\":\"Content Writer\",\"fit_score\":65,\"why\":\"The candidate’s Content Writing skill directly matches the core requirement for a content writer role.\",\"search_keywords\":[\"content writer Delhi hybrid\",\"junior content writer Delhi\",\"entry level content writer hybrid\"],\"skill_gaps\":[\"Research\",\"Grammar\"]},{\"title\":\"Social Media Coordinator\",\"fit_score\":55,\"why\":\"Content Writing provides a solid base for creating social posts, though social media management tools are missing.\",\"search_keywords\":[\"social media coordinator Delhi hybrid\",\"junior social media coordinator Delhi\",\"entry level social media hybrid\"],\"skill_gaps\":[\"Social Media Management\",\"Scheduling Tools\"]},{\"title\":\"Copywriter\",\"fit_score\":55,\"why\":\"Strong Content Writing ability is essential for copywriting, but creativity and brand‑voice expertise are needed.\",\"search_keywords\":[\"copywriter Delhi hybrid\",\"junior copywriter Delhi\",\"entry level copywriter hybrid\"],\"skill_gaps\":[\"Creativity\",\"Brand Voice\"]},{\"title\":\"Digital Marketing Executive\",\"fit_score\":50,\"why\":\"SEO knowledge aligns with digital marketing, yet SEM, social media, and analytics skills are lacking.\",\"search_keywords\":[\"digital marketing executive Delhi hybrid\",\"junior digital marketing Delhi\",\"entry level digital marketing hybrid\"],\"skill_gaps\":[\"SEM\",\"Social Media\",\"Analytics\"]},{\"title\":\"SEO Executive\",\"fit_score\":50,\"why\":\"The candidate’s SEO skill fits the role, but keyword research, analytics, and content optimization are missing.\",\"search_keywords\":[\"seo executive Delhi hybrid\",\"junior seo executive Delhi\",\"entry level seo hybrid\"],\"skill_gaps\":[\"Keyword Research\",\"Google Analytics\",\"Content Optimization\"]}]}",
+    "roles": {
+      "roles": [
+        {
+          "title": "Content Writer",
+          "fit_score": 65,
+          "why": "The candidate’s Content Writing skill directly matches the core requirement for a content writer role.",
+          "search_keywords": [
+            "content writer Delhi hybrid",
+            "junior content writer Delhi",
+            "entry level content writer hybrid"
+          ],
+          "skill_gaps": [
+            "Research",
+            "Grammar"
+          ]
+        },
+        {
+          "title": "Social Media Coordinator",
+          "fit_score": 55,
+          "why": "Content Writing provides a solid base for creating social posts, though social media management tools are missing.",
+          "search_keywords": [
+            "social media coordinator Delhi hybrid",
+            "junior social media coordinator Delhi",
+            "entry level social media hybrid"
+          ],
+          "skill_gaps": [
+            "Social Media Management",
+            "Scheduling Tools"
+          ]
+        },
+        {
+          "title": "Copywriter",
+          "fit_score": 55,
+          "why": "Strong Content Writing ability is essential for copywriting, but creativity and brand‑voice expertise are needed.",
+          "search_keywords": [
+            "copywriter Delhi hybrid",
+            "junior copywriter Delhi",
+            "entry level copywriter hybrid"
+          ],
+          "skill_gaps": [
+            "Creativity",
+            "Brand Voice"
+          ]
+        },
+        {
+          "title": "Digital Marketing Executive",
+          "fit_score": 50,
+          "why": "SEO knowledge aligns with digital marketing, yet SEM, social media, and analytics skills are lacking.",
+          "search_keywords": [
+            "digital marketing executive Delhi hybrid",
+            "junior digital marketing Delhi",
+            "entry level digital marketing hybrid"
+          ],
+          "skill_gaps": [
+            "SEM",
+            "Social Media",
+            "Analytics"
+          ]
+        },
+        {
+          "title": "SEO Executive",
+          "fit_score": 50,
+          "why": "The candidate’s SEO skill fits the role, but keyword research, analytics, and content optimization are missing.",
+          "search_keywords": [
+            "seo executive Delhi hybrid",
+            "junior seo executive Delhi",
+            "entry level seo hybrid"
+          ],
+          "skill_gaps": [
+            "Keyword Research",
+            "Google Analytics",
+            "Content Optimization"
+          ]
+        }
+      ]
+    },
+    "plan": "TOP PICK: Content Writer – The candidate’s Content Writing skill directly matches the core requirement for a content writer role.  \n\nWHERE TO SEARCH:  \n- LinkedIn: \"content writer Delhi hybrid\"  \n- Naukri: \"content writer Delhi hybrid\"  \n- Indeed: \"content writer Delhi hybrid\"  \n\nTHIS WEEK:  \n1. Write and publish a 600‑word SEO‑optimized article on a personal blog or GitHub.  \n2. Complete a free online micro‑course on research techniques and grammar improvement.  \n3. Revamp LinkedIn profile with relevant keywords and upload three writing samples.  \n\nSKILL GAPS TO CLOSE: Research, Grammar, Social Media Management, Scheduling Tools, Creativity, Brand Voice"
+  },
+  "auto_pass": true
+}

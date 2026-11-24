@@ -1,0 +1,111 @@
+{
+  "case": {
+    "id": 5,
+    "type": "Normal",
+    "short": "2nd-year CS, wants internship",
+    "expect": "ok",
+    "expected_text": "5 internship-level roles, no senior roles",
+    "text": "2nd year B.Tech CSE student. I know C++, basic Python and HTML/CSS. Looking for a summer internship."
+  },
+  "result": {
+    "input": "2nd year B.Tech CSE student. I know C++, basic Python and HTML/CSS. Looking for a summer internship.",
+    "stopped_at": null,
+    "errors": [],
+    "p1_raw": "{\"status\":\"ok\",\"skills\":[\"C++\",\"Python\",\"HTML/CSS\"],\"education\":\"B.Tech CSE (2nd year)\",\"experience_level\":\"student\",\"years_experience\":0,\"target_roles\":[\"Internship\"],\"location\":\"\",\"work_mode\":\"any\",\"flags\":[]}",
+    "profile": {
+      "status": "ok",
+      "skills": [
+        "C++",
+        "Python",
+        "HTML/CSS"
+      ],
+      "education": "B.Tech CSE (2nd year)",
+      "experience_level": "student",
+      "years_experience": 0,
+      "target_roles": [
+        "Internship"
+      ],
+      "location": "",
+      "work_mode": "any",
+      "flags": []
+    },
+    "p2_raw": "{\"roles\":[{\"title\":\"Software Development Intern\",\"fit_score\":82,\"why\":\"Proficiency in C++ and Python aligns well with core coding tasks expected of a software development intern.\",\"search_keywords\":[\"software development intern\",\"C++ Python internship\",\"junior developer intern\"],\"skill_gaps\":[\"Git\",\"Data Structures\"]},{\"title\":\"Web Development Intern\",\"fit_score\":80,\"why\":\"HTML/CSS expertise provides a solid foundation for front‑end work, complemented by Python for backend scripting.\",\"search_keywords\":[\"web development intern\",\"HTML CSS internship\",\"frontend intern\"],\"skill_gaps\":[\"JavaScript\",\"React\"]},{\"title\":\"Machine Learning Intern\",\"fit_score\":78,\"why\":\"Python knowledge is essential for ML projects, and C++ experience can aid performance‑critical implementations.\",\"search_keywords\":[\"machine learning intern\",\"Python ML internship\",\"ML intern\"],\"skill_gaps\":[\"TensorFlow\",\"scikit-learn\"]},{\"title\":\"QA Automation Intern\",\"fit_score\":70,\"why\":\"Python scripting skills are valuable for building automated test suites in QA roles.\",\"search_keywords\":[\"QA automation intern\",\"test automation internship\",\"Python QA intern\"],\"skill_gaps\":[\"Selenium\",\"TestNG\"]},{\"title\":\"Data Science Intern\",\"fit_score\":65,\"why\":\"Python forms the backbone of data analysis, though additional data‑handling tools are needed for a data science role.\",\"search_keywords\":[\"data science intern\",\"Python data analysis internship\",\"junior data scientist\"],\"skill_gaps\":[\"Pandas\",\"SQL\",\"Statistics\"]}]}",
+    "roles": {
+      "roles": [
+        {
+          "title": "Software Development Intern",
+          "fit_score": 82,
+          "why": "Proficiency in C++ and Python aligns well with core coding tasks expected of a software development intern.",
+          "search_keywords": [
+            "software development intern",
+            "C++ Python internship",
+            "junior developer intern"
+          ],
+          "skill_gaps": [
+            "Git",
+            "Data Structures"
+          ]
+        },
+        {
+          "title": "Web Development Intern",
+          "fit_score": 80,
+          "why": "HTML/CSS expertise provides a solid foundation for front‑end work, complemented by Python for backend scripting.",
+          "search_keywords": [
+            "web development intern",
+            "HTML CSS internship",
+            "frontend intern"
+          ],
+          "skill_gaps": [
+            "JavaScript",
+            "React"
+          ]
+        },
+        {
+          "title": "Machine Learning Intern",
+          "fit_score": 78,
+          "why": "Python knowledge is essential for ML projects, and C++ experience can aid performance‑critical implementations.",
+          "search_keywords": [
+            "machine learning intern",
+            "Python ML internship",
+            "ML intern"
+          ],
+          "skill_gaps": [
+            "TensorFlow",
+            "scikit-learn"
+          ]
+        },
+        {
+          "title": "QA Automation Intern",
+          "fit_score": 70,
+          "why": "Python scripting skills are valuable for building automated test suites in QA roles.",
+          "search_keywords": [
+            "QA automation intern",
+            "test automation internship",
+            "Python QA intern"
+          ],
+          "skill_gaps": [
+            "Selenium",
+            "TestNG"
+          ]
+        },
+        {
+          "title": "Data Science Intern",
+          "fit_score": 65,
+          "why": "Python forms the backbone of data analysis, though additional data‑handling tools are needed for a data science role.",
+          "search_keywords": [
+            "data science intern",
+            "Python data analysis internship",
+            "junior data scientist"
+          ],
+          "skill_gaps": [
+            "Pandas",
+            "SQL",
+            "Statistics"
+          ]
+        }
+      ]
+    },
+    "plan": "TOP PICK: Software Development Intern - Your C++ and Python skills match the core coding tasks for this role.  \nWHERE TO SEARCH:  \n- LinkedIn: \"software development intern C++ Python\"  \n- Indeed: \"software development intern C++ Python\"  \n- Glassdoor: \"software development intern C++ Python\"  \nTHIS WEEK:  \n1. Complete a Git tutorial and push a small C++ project to GitHub.  \n2. Solve 5 data‑structures problems on LeetCode using C++.  \n3. Update your resume for a software intern and apply to at least 5 listings on the portals above.  \nSKILL GAPS TO CLOSE: Git, Data Structures, JavaScript, React, TensorFlow, scikit-learn"
+  },
+  "auto_pass": true
+}

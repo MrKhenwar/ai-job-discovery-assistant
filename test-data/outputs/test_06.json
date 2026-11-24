@@ -1,0 +1,114 @@
+{
+  "case": {
+    "id": 6,
+    "type": "Normal",
+    "short": "Teacher switching to UX",
+    "expect": "ok",
+    "expected_text": "5 junior UX/product-adjacent roles",
+    "text": "I was a school teacher for 5 years and I am switching careers. I completed a Figma and UX design course and built 2 case studies."
+  },
+  "result": {
+    "input": "I was a school teacher for 5 years and I am switching careers. I completed a Figma and UX design course and built 2 case studies.",
+    "stopped_at": null,
+    "errors": [],
+    "p1_raw": "{\"status\":\"ok\",\"skills\":[\"Figma\",\"UX Design\"],\"education\":\"Figma and UX design course\",\"experience_level\":\"mid\",\"years_experience\":5,\"target_roles\":[\"UX Designer\"],\"location\":\"\",\"work_mode\":\"any\",\"flags\":[]}",
+    "profile": {
+      "status": "ok",
+      "skills": [
+        "Figma",
+        "UX Design"
+      ],
+      "education": "Figma and UX design course",
+      "experience_level": "mid",
+      "years_experience": 5,
+      "target_roles": [
+        "UX Designer"
+      ],
+      "location": "",
+      "work_mode": "any",
+      "flags": []
+    },
+    "p2_raw": "{\"roles\":[{\"title\":\"UX Designer\",\"fit_score\":64,\"why\":\"The candidate’s Figma expertise and UX Design background align with core UX Designer responsibilities.\",\"search_keywords\":[\"UX Designer mid level\",\"Figma UX Designer job\",\"UX Designer remote\"],\"skill_gaps\":[\"User Research\",\"Usability Testing\",\"Wireframing\"]},{\"title\":\"Product Designer\",\"fit_score\":59,\"why\":\"Figma and general UX Design skills give a solid foundation for product design work.\",\"search_keywords\":[\"Product Designer Figma\",\"mid level product designer\",\"Product Designer remote\"],\"skill_gaps\":[\"Interaction Design\",\"Product Thinking\",\"Prototyping\"]},{\"title\":\"UI Designer\",\"fit_score\":47,\"why\":\"Figma proficiency supports UI design tasks, though visual design specifics are missing.\",\"search_keywords\":[\"UI Designer Figma\",\"mid level UI Designer\",\"UI Designer remote\"],\"skill_gaps\":[\"Visual Design\",\"Typography\",\"Color Theory\"]},{\"title\":\"Interaction Designer\",\"fit_score\":47,\"why\":\"Figma knowledge is relevant, but interaction‑design techniques need development.\",\"search_keywords\":[\"Interaction Designer Figma\",\"mid level interaction designer\",\"Interaction Designer remote\"],\"skill_gaps\":[\"Interaction Design\",\"Motion Design\",\"Wireframing\"]},{\"title\":\"UX Researcher\",\"fit_score\":35,\"why\":\"The candidate lacks direct research experience despite a UX design background.\",\"search_keywords\":[\"UX Researcher remote\",\"mid level UX researcher\",\"UX Researcher job\"],\"skill_gaps\":[\"User Research\",\"Interviewing\",\"Persona Creation\"]}]}",
+    "roles": {
+      "roles": [
+        {
+          "title": "UX Designer",
+          "fit_score": 64,
+          "why": "The candidate’s Figma expertise and UX Design background align with core UX Designer responsibilities.",
+          "search_keywords": [
+            "UX Designer mid level",
+            "Figma UX Designer job",
+            "UX Designer remote"
+          ],
+          "skill_gaps": [
+            "User Research",
+            "Usability Testing",
+            "Wireframing"
+          ]
+        },
+        {
+          "title": "Product Designer",
+          "fit_score": 59,
+          "why": "Figma and general UX Design skills give a solid foundation for product design work.",
+          "search_keywords": [
+            "Product Designer Figma",
+            "mid level product designer",
+            "Product Designer remote"
+          ],
+          "skill_gaps": [
+            "Interaction Design",
+            "Product Thinking",
+            "Prototyping"
+          ]
+        },
+        {
+          "title": "UI Designer",
+          "fit_score": 47,
+          "why": "Figma proficiency supports UI design tasks, though visual design specifics are missing.",
+          "search_keywords": [
+            "UI Designer Figma",
+            "mid level UI Designer",
+            "UI Designer remote"
+          ],
+          "skill_gaps": [
+            "Visual Design",
+            "Typography",
+            "Color Theory"
+          ]
+        },
+        {
+          "title": "Interaction Designer",
+          "fit_score": 47,
+          "why": "Figma knowledge is relevant, but interaction‑design techniques need development.",
+          "search_keywords": [
+            "Interaction Designer Figma",
+            "mid level interaction designer",
+            "Interaction Designer remote"
+          ],
+          "skill_gaps": [
+            "Interaction Design",
+            "Motion Design",
+            "Wireframing"
+          ]
+        },
+        {
+          "title": "UX Researcher",
+          "fit_score": 35,
+          "why": "The candidate lacks direct research experience despite a UX design background.",
+          "search_keywords": [
+            "UX Researcher remote",
+            "mid level UX researcher",
+            "UX Researcher job"
+          ],
+          "skill_gaps": [
+            "User Research",
+            "Interviewing",
+            "Persona Creation"
+          ]
+        }
+      ]
+    },
+    "plan": "TOP PICK: UX Designer - The candidate’s Figma expertise and UX Design background align with core UX Designer responsibilities.\n\nWHERE TO SEARCH:\n- LinkedIn: \"UX Designer mid level OR Figma UX Designer job OR UX Designer remote\"\n- Indeed: \"UX Designer mid level OR Figma UX Designer job OR UX Designer remote\"\n- Glassdoor: \"UX Designer mid level OR Figma UX Designer job OR UX Designer remote\"\n\nTHIS WEEK:\n1. Conduct a 30‑minute remote user interview on a personal project and document findings.\n2. Create a usability test plan and run a quick test on an existing prototype; record results.\n3. Build a high‑fidelity wireframe in Figma for a new feature and publish it on GitHub.\n\nSKILL GAPS TO CLOSE: User Research, Usability Testing, Wireframing, Interaction Design, Product Thinking, Prototyping, Visual Design, Typography, Color Theory"
+  },
+  "auto_pass": true
+}

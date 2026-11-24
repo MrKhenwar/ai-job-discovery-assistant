@@ -1,0 +1,112 @@
+{
+  "case": {
+    "id": 9,
+    "type": "Edge",
+    "short": "Contradictory: fresher with 10 yrs exp, remote but onsite",
+    "expect": "ok",
+    "expected_text": "Contradiction listed in flags, still valid output",
+    "check_flags": true,
+    "text": "I am a fresher with 10 years of experience in Java. I only want remote work but I can only work onsite in Agra."
+  },
+  "result": {
+    "input": "I am a fresher with 10 years of experience in Java. I only want remote work but I can only work onsite in Agra.",
+    "stopped_at": null,
+    "errors": [],
+    "p1_raw": "{\"status\":\"ok\",\"skills\":[\"Java\"],\"education\":\"\",\"experience_level\":\"senior\",\"years_experience\":10,\"target_roles\":[],\"location\":\"Agra\",\"work_mode\":\"remote\",\"flags\":[\"Contradiction between stated experience level (fresher) and years of experience (10 years)\",\"Contradiction between desired remote work and ability to work onsite only in Agra\"]}",
+    "profile": {
+      "status": "ok",
+      "skills": [
+        "Java"
+      ],
+      "education": "",
+      "experience_level": "senior",
+      "years_experience": 10,
+      "target_roles": [],
+      "location": "Agra",
+      "work_mode": "remote",
+      "flags": [
+        "Contradiction between stated experience level (fresher) and years of experience (10 years)",
+        "Contradiction between desired remote work and ability to work onsite only in Agra"
+      ]
+    },
+    "p2_raw": "{\"roles\":[{\"title\":\"Senior Java Backend Engineer\",\"fit_score\":95,\"why\":\"The candidate’s 10 years of Java experience aligns perfectly with senior backend development responsibilities.\",\"search_keywords\":[\"senior java backend engineer Agra\",\"java backend remote job\",\"senior java developer work from home\"],\"skill_gaps\":[\"Spring Boot\",\"SQL\"]},{\"title\":\"Java Team Lead\",\"fit_score\":90,\"why\":\"Extensive Java background and a decade‑long career qualify the candidate to lead a development team.\",\"search_keywords\":[\"java team lead Agra\",\"java lead remote\",\"senior java team lead job\"],\"skill_gaps\":[\"Microservices\",\"Agile\"]},{\"title\":\"Lead Java Developer\",\"fit_score\":85,\"why\":\"A solid 10‑year Java track record matches the expectations for a lead developer role.\",\"search_keywords\":[\"lead java developer remote\",\"java lead developer job\",\"senior java remote\"],\"skill_gaps\":[\"Spring\",\"Docker\"]},{\"title\":\"Java Technical Architect\",\"fit_score\":65,\"why\":\"Ten years of Java work provides a strong foundation for architecting Java solutions, though additional design‑pattern expertise is needed.\",\"search_keywords\":[\"java technical architect Agra\",\"java architect job\",\"senior java architect\"],\"skill_gaps\":[\"Design Patterns\",\"Microservices\",\"AWS\"]},{\"title\":\"Senior Full Stack Developer\",\"fit_score\":55,\"why\":\"Java expertise satisfies the backend portion of full‑stack development, but front‑end technologies are missing.\",\"search_keywords\":[\"senior full stack developer remote\",\"java full stack job\",\"full stack developer java\"],\"skill_gaps\":[\"React\",\"HTML/CSS\",\"Node.js\"]}]}",
+    "roles": {
+      "roles": [
+        {
+          "title": "Senior Java Backend Engineer",
+          "fit_score": 95,
+          "why": "The candidate’s 10 years of Java experience aligns perfectly with senior backend development responsibilities.",
+          "search_keywords": [
+            "senior java backend engineer Agra",
+            "java backend remote job",
+            "senior java developer work from home"
+          ],
+          "skill_gaps": [
+            "Spring Boot",
+            "SQL"
+          ]
+        },
+        {
+          "title": "Java Team Lead",
+          "fit_score": 90,
+          "why": "Extensive Java background and a decade‑long career qualify the candidate to lead a development team.",
+          "search_keywords": [
+            "java team lead Agra",
+            "java lead remote",
+            "senior java team lead job"
+          ],
+          "skill_gaps": [
+            "Microservices",
+            "Agile"
+          ]
+        },
+        {
+          "title": "Lead Java Developer",
+          "fit_score": 85,
+          "why": "A solid 10‑year Java track record matches the expectations for a lead developer role.",
+          "search_keywords": [
+            "lead java developer remote",
+            "java lead developer job",
+            "senior java remote"
+          ],
+          "skill_gaps": [
+            "Spring",
+            "Docker"
+          ]
+        },
+        {
+          "title": "Java Technical Architect",
+          "fit_score": 65,
+          "why": "Ten years of Java work provides a strong foundation for architecting Java solutions, though additional design‑pattern expertise is needed.",
+          "search_keywords": [
+            "java technical architect Agra",
+            "java architect job",
+            "senior java architect"
+          ],
+          "skill_gaps": [
+            "Design Patterns",
+            "Microservices",
+            "AWS"
+          ]
+        },
+        {
+          "title": "Senior Full Stack Developer",
+          "fit_score": 55,
+          "why": "Java expertise satisfies the backend portion of full‑stack development, but front‑end technologies are missing.",
+          "search_keywords": [
+            "senior full stack developer remote",
+            "java full stack job",
+            "full stack developer java"
+          ],
+          "skill_gaps": [
+            "React",
+            "HTML/CSS",
+            "Node.js"
+          ]
+        }
+      ]
+    },
+    "plan": "TOP PICK: Senior Java Backend Engineer – The candidate’s 10 years of Java experience aligns perfectly with senior backend development responsibilities.  \nWHERE TO SEARCH:  \n- LinkedIn: \"senior java backend engineer remote\"  \n- Indeed: \"senior java backend engineer Agra\"  \n- Naukri: \"java backend remote job\"  \nTHIS WEEK:  \n1. Build a small Spring Boot microservice, push the code to GitHub, and write a README.  \n2. Design and execute basic SQL queries on a sample PostgreSQL database; document results in a short report.  \n3. Refresh LinkedIn profile with senior Java backend keywords, add “remote” preference, and connect with 5 Java‑focused recruiters.  \nSKILL GAPS TO CLOSE: Spring Boot, Spring, SQL, Microservices, Agile, Docker"
+  },
+  "auto_pass": true
+}

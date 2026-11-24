@@ -1,0 +1,112 @@
+{
+  "case": {
+    "id": 4,
+    "type": "Normal",
+    "short": "Mechanical engineer, CAD, Pune",
+    "expect": "ok",
+    "expected_text": "5 design/CAD/manufacturing roles",
+    "text": "B.Tech mechanical engineer, 2 years experience with SolidWorks and AutoCAD in a manufacturing firm in Pune."
+  },
+  "result": {
+    "input": "B.Tech mechanical engineer, 2 years experience with SolidWorks and AutoCAD in a manufacturing firm in Pune.",
+    "stopped_at": null,
+    "errors": [],
+    "p1_raw": "{\"status\":\"ok\",\"skills\":[\"SolidWorks\",\"AutoCAD\"],\"education\":\"B.Tech Mechanical Engineering\",\"experience_level\":\"junior\",\"years_experience\":2,\"target_roles\":[],\"location\":\"Pune\",\"work_mode\":\"any\",\"flags\":[\"target_role_not_specified\"]}",
+    "profile": {
+      "status": "ok",
+      "skills": [
+        "SolidWorks",
+        "AutoCAD"
+      ],
+      "education": "B.Tech Mechanical Engineering",
+      "experience_level": "junior",
+      "years_experience": 2,
+      "target_roles": [],
+      "location": "Pune",
+      "work_mode": "any",
+      "flags": [
+        "target_role_not_specified"
+      ]
+    },
+    "p2_raw": "{\"roles\":[{\"title\":\"Junior Mechanical Design Engineer\",\"fit_score\":95,\"why\":\"Proficiency in SolidWorks and AutoCAD aligns directly with the core responsibilities of a junior mechanical design engineer.\",\"search_keywords\":[\"junior mechanical design engineer Pune\",\"SolidWorks AutoCAD job\",\"entry level design engineer\"],\"skill_gaps\":[\"GD&T\",\"Finite Element Analysis\"]},{\"title\":\"CAD Designer (Mechanical)\",\"fit_score\":92,\"why\":\"The candidate’s SolidWorks and AutoCAD expertise covers the primary CAD tools required for mechanical design drafting.\",\"search_keywords\":[\"CAD designer mechanical Pune\",\"AutoCAD SolidWorks designer\",\"junior CAD drafting job\"],\"skill_gaps\":[\"CATIA\",\"Creo\"]},{\"title\":\"Product Development Engineer (Entry Level)\",\"fit_score\":83,\"why\":\"SolidWorks experience supports product modeling, while the role also expects material selection knowledge.\",\"search_keywords\":[\"product development engineer entry Pune\",\"SolidWorks product design\",\"junior product engineer\"],\"skill_gaps\":[\"Material Science\",\"GD&T\",\"Design for Manufacturability\"]},{\"title\":\"Junior Manufacturing Engineer\",\"fit_score\":80,\"why\":\"AutoCAD and SolidWorks provide the necessary design background for creating manufacturing layouts and tooling.\",\"search_keywords\":[\"junior manufacturing engineer Pune\",\"SolidWorks manufacturing role\",\"entry level process engineer\"],\"skill_gaps\":[\"Lean Manufacturing\",\"Six Sigma\",\"Process Planning\"]},{\"title\":\"Junior Mechanical Engineer\",\"fit_score\":77,\"why\":\"SolidWorks competency gives a solid foundation for general mechanical engineering tasks at a junior level.\",\"search_keywords\":[\"junior mechanical engineer Pune\",\"SolidWorks mechanical job\",\"entry level mechanical position\"],\"skill_gaps\":[\"Project Management\",\"GD&T\",\"Thermal Analysis\"]}]}",
+    "roles": {
+      "roles": [
+        {
+          "title": "Junior Mechanical Design Engineer",
+          "fit_score": 95,
+          "why": "Proficiency in SolidWorks and AutoCAD aligns directly with the core responsibilities of a junior mechanical design engineer.",
+          "search_keywords": [
+            "junior mechanical design engineer Pune",
+            "SolidWorks AutoCAD job",
+            "entry level design engineer"
+          ],
+          "skill_gaps": [
+            "GD&T",
+            "Finite Element Analysis"
+          ]
+        },
+        {
+          "title": "CAD Designer (Mechanical)",
+          "fit_score": 92,
+          "why": "The candidate’s SolidWorks and AutoCAD expertise covers the primary CAD tools required for mechanical design drafting.",
+          "search_keywords": [
+            "CAD designer mechanical Pune",
+            "AutoCAD SolidWorks designer",
+            "junior CAD drafting job"
+          ],
+          "skill_gaps": [
+            "CATIA",
+            "Creo"
+          ]
+        },
+        {
+          "title": "Product Development Engineer (Entry Level)",
+          "fit_score": 83,
+          "why": "SolidWorks experience supports product modeling, while the role also expects material selection knowledge.",
+          "search_keywords": [
+            "product development engineer entry Pune",
+            "SolidWorks product design",
+            "junior product engineer"
+          ],
+          "skill_gaps": [
+            "Material Science",
+            "GD&T",
+            "Design for Manufacturability"
+          ]
+        },
+        {
+          "title": "Junior Manufacturing Engineer",
+          "fit_score": 80,
+          "why": "AutoCAD and SolidWorks provide the necessary design background for creating manufacturing layouts and tooling.",
+          "search_keywords": [
+            "junior manufacturing engineer Pune",
+            "SolidWorks manufacturing role",
+            "entry level process engineer"
+          ],
+          "skill_gaps": [
+            "Lean Manufacturing",
+            "Six Sigma",
+            "Process Planning"
+          ]
+        },
+        {
+          "title": "Junior Mechanical Engineer",
+          "fit_score": 77,
+          "why": "SolidWorks competency gives a solid foundation for general mechanical engineering tasks at a junior level.",
+          "search_keywords": [
+            "junior mechanical engineer Pune",
+            "SolidWorks mechanical job",
+            "entry level mechanical position"
+          ],
+          "skill_gaps": [
+            "Project Management",
+            "GD&T",
+            "Thermal Analysis"
+          ]
+        }
+      ]
+    },
+    "plan": "TOP PICK: Junior Mechanical Design Engineer - Your SolidWorks and AutoCAD expertise matches the core duties of a junior mechanical design engineer.  \nWHERE TO SEARCH:  \n- LinkedIn: \"junior mechanical design engineer Pune SolidWorks AutoCAD job\"  \n- Naukri: \"entry level design engineer Pune SolidWorks AutoCAD\"  \n- Indeed: \"junior mechanical design engineer Pune\"  \nTHIS WEEK:  \n1. Finish a free GD&T tutorial and apply the symbols to a SolidWorks part drawing.  \n2. Create a simple FEA simulation of a bracket in SolidWorks Simulation and publish the report on GitHub.  \n3. Refresh your LinkedIn profile with the above keywords and add the two new portfolio projects.  \nSKILL GAPS TO CLOSE: GD&T, Finite Element Analysis, CATIA, Creo, Material Science, Design for Manufacturability"
+  },
+  "auto_pass": true
+}

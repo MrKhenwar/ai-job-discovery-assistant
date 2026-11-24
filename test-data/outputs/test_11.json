@@ -1,0 +1,22 @@
+{
+  "case": {
+    "id": 11,
+    "type": "Invalid",
+    "short": "Answer: idk",
+    "expect": "insufficient",
+    "expected_text": "status insufficient with a follow-up question; pipeline stops",
+    "text": "idk"
+  },
+  "result": {
+    "input": "idk",
+    "stopped_at": "P1",
+    "errors": [],
+    "p1_raw": "{\"status\":\"insufficient\",\"reason\":\"The text contains no skills, education, experience or target role.\",\"ask\":\"What are your main skills and what kind of job are you looking for?\"}",
+    "profile": {
+      "status": "insufficient",
+      "reason": "The text contains no skills, education, experience or target role.",
+      "ask": "What are your main skills and what kind of job are you looking for?"
+    }
+  },
+  "auto_pass": true
+}

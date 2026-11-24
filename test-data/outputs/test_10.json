@@ -1,0 +1,22 @@
+{
+  "case": {
+    "id": 10,
+    "type": "Edge",
+    "short": "Only a job title, no skills",
+    "expect": "any",
+    "expected_text": "Either asks for more info or gives a low-detail valid profile; no invented skills",
+    "text": "software engineer"
+  },
+  "result": {
+    "input": "software engineer",
+    "stopped_at": "P1",
+    "errors": [],
+    "p1_raw": "{\"status\":\"insufficient\",\"reason\":\"The text contains no skills, education, experience, location, or work mode information.\",\"ask\":\"What are your main skills, education background, years of experience, and the type of job you are looking for?\"}",
+    "profile": {
+      "status": "insufficient",
+      "reason": "The text contains no skills, education, experience, location, or work mode information.",
+      "ask": "What are your main skills, education background, years of experience, and the type of job you are looking for?"
+    }
+  },
+  "auto_pass": true
+}

@@ -1,0 +1,22 @@
+{
+  "case": {
+    "id": 8,
+    "type": "Edge",
+    "short": "Very long mixed skill list (30+ skills)",
+    "expect": "ok",
+    "expected_text": "Valid JSON, exactly 5 roles, no crash",
+    "text": "Skills: Python, Java, C++, C, Go, Rust, SQL, MongoDB, PostgreSQL, Redis, React, Angular, Vue, Node, Django, Flask, Spring, Docker, Kubernetes, AWS, Azure, GCP, Terraform, Jenkins, Git, Linux, Figma, Photoshop, Excel, Tableau, Power BI, SEO, copywriting, Salesforce. 3 years experience. Open to anything."
+  },
+  "result": {
+    "input": "Skills: Python, Java, C++, C, Go, Rust, SQL, MongoDB, PostgreSQL, Redis, React, Angular, Vue, Node, Django, Flask, Spring, Docker, Kubernetes, AWS, Azure, GCP, Terraform, Jenkins, Git, Linux, Figma, Photoshop, Excel, Tableau, Power BI, SEO, copywriting, Salesforce. 3 years experience. Open to anything.",
+    "stopped_at": "P1",
+    "errors": [],
+    "p1_raw": "{\"status\":\"insufficient\",\"reason\":\"The text does not specify a target role or education background.\",\"ask\":\"What role are you looking for and what is your education background?\"}",
+    "profile": {
+      "status": "insufficient",
+      "reason": "The text does not specify a target role or education background.",
+      "ask": "What role are you looking for and what is your education background?"
+    }
+  },
+  "auto_pass": false
+}

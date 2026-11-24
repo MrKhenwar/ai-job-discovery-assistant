@@ -1,0 +1,113 @@
+{
+  "case": {
+    "id": 7,
+    "type": "Edge",
+    "short": "Hinglish input",
+    "expect": "ok",
+    "expected_text": "Valid output written in English",
+    "check_english": true,
+    "text": "Mujhe data science mein job chahiye, Python aur machine learning aati hai, abhi final year mein hoon, Bangalore mein."
+  },
+  "result": {
+    "input": "Mujhe data science mein job chahiye, Python aur machine learning aati hai, abhi final year mein hoon, Bangalore mein.",
+    "stopped_at": null,
+    "errors": [],
+    "p1_raw": "{\"status\":\"ok\",\"skills\":[\"Python\",\"Machine Learning\"],\"education\":\"Final year (unspecified)\",\"experience_level\":\"student\",\"years_experience\":0,\"target_roles\":[\"Data Scientist\"],\"location\":\"Bangalore\",\"work_mode\":\"any\",\"flags\":[]}",
+    "profile": {
+      "status": "ok",
+      "skills": [
+        "Python",
+        "Machine Learning"
+      ],
+      "education": "Final year (unspecified)",
+      "experience_level": "student",
+      "years_experience": 0,
+      "target_roles": [
+        "Data Scientist"
+      ],
+      "location": "Bangalore",
+      "work_mode": "any",
+      "flags": []
+    },
+    "p2_raw": "{\"roles\":[{\"title\":\"Machine Learning Intern\",\"fit_score\":70,\"why\":\"The candidate's Python and Machine Learning skills align directly with core ML internship tasks.\",\"search_keywords\":[\"machine learning intern Bangalore\",\"ML intern Python\",\"student ML internship\"],\"skill_gaps\":[\"TensorFlow/PyTorch\",\"Data Preprocessing\"]},{\"title\":\"AI Research Intern\",\"fit_score\":68,\"why\":\"Python and Machine Learning provide a solid base for AI research projects.\",\"search_keywords\":[\"AI research intern Bangalore\",\"AI intern Python\",\"student AI internship\"],\"skill_gaps\":[\"Research Methodology\",\"Deep Learning\"]},{\"title\":\"Data Scientist Intern\",\"fit_score\":64,\"why\":\"Python and Machine Learning are key competencies for entry‑level data science work.\",\"search_keywords\":[\"data scientist intern Bangalore\",\"data science intern Python\",\"student data science internship\"],\"skill_gaps\":[\"Statistics\",\"SQL\",\"Data Visualization\"]},{\"title\":\"Data Analyst Intern\",\"fit_score\":55,\"why\":\"Python supports basic data analysis, though additional tools are needed.\",\"search_keywords\":[\"data analyst intern Bangalore\",\"data analyst intern Python\",\"student data analyst internship\"],\"skill_gaps\":[\"SQL\",\"Excel\",\"Data Visualization\"]},{\"title\":\"Business Intelligence Intern\",\"fit_score\":53,\"why\":\"Python is useful for BI tasks, but the candidate lacks typical BI tooling experience.\",\"search_keywords\":[\"business intelligence intern Bangalore\",\"BI intern Python\",\"student BI internship\"],\"skill_gaps\":[\"SQL\",\"Power BI/Tableau\",\"Data Modeling\"]}]}",
+    "roles": {
+      "roles": [
+        {
+          "title": "Machine Learning Intern",
+          "fit_score": 70,
+          "why": "The candidate's Python and Machine Learning skills align directly with core ML internship tasks.",
+          "search_keywords": [
+            "machine learning intern Bangalore",
+            "ML intern Python",
+            "student ML internship"
+          ],
+          "skill_gaps": [
+            "TensorFlow/PyTorch",
+            "Data Preprocessing"
+          ]
+        },
+        {
+          "title": "AI Research Intern",
+          "fit_score": 68,
+          "why": "Python and Machine Learning provide a solid base for AI research projects.",
+          "search_keywords": [
+            "AI research intern Bangalore",
+            "AI intern Python",
+            "student AI internship"
+          ],
+          "skill_gaps": [
+            "Research Methodology",
+            "Deep Learning"
+          ]
+        },
+        {
+          "title": "Data Scientist Intern",
+          "fit_score": 64,
+          "why": "Python and Machine Learning are key competencies for entry‑level data science work.",
+          "search_keywords": [
+            "data scientist intern Bangalore",
+            "data science intern Python",
+            "student data science internship"
+          ],
+          "skill_gaps": [
+            "Statistics",
+            "SQL",
+            "Data Visualization"
+          ]
+        },
+        {
+          "title": "Data Analyst Intern",
+          "fit_score": 55,
+          "why": "Python supports basic data analysis, though additional tools are needed.",
+          "search_keywords": [
+            "data analyst intern Bangalore",
+            "data analyst intern Python",
+            "student data analyst internship"
+          ],
+          "skill_gaps": [
+            "SQL",
+            "Excel",
+            "Data Visualization"
+          ]
+        },
+        {
+          "title": "Business Intelligence Intern",
+          "fit_score": 53,
+          "why": "Python is useful for BI tasks, but the candidate lacks typical BI tooling experience.",
+          "search_keywords": [
+            "business intelligence intern Bangalore",
+            "BI intern Python",
+            "student BI internship"
+          ],
+          "skill_gaps": [
+            "SQL",
+            "Power BI/Tableau",
+            "Data Modeling"
+          ]
+        }
+      ]
+    },
+    "plan": "TOP PICK: Machine Learning Intern - The candidate's Python and Machine Learning skills align directly with core ML internship tasks.  \nWHERE TO SEARCH:  \n- LinkedIn: \"machine learning intern Bangalore\"  \n- Naukri: \"machine learning intern Bangalore\"  \n- Internshala: \"machine learning intern Bangalore\"  \nTHIS WEEK:  \n1. Finish a TensorFlow/PyTorch tutorial and push a notebook to GitHub.  \n2. Create a data‑preprocessing pipeline on a public dataset and write a short blog post.  \n3. Update the resume for ML internships and apply to at least five listings on the three portals.  \nSKILL GAPS TO CLOSE: TensorFlow/PyTorch, Data Preprocessing, Research Methodology, Deep Learning, Statistics, SQL, Data Visualization"
+  },
+  "auto_pass": true
+}

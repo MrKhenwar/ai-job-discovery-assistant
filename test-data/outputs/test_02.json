@@ -1,0 +1,111 @@
+{
+  "case": {
+    "id": 2,
+    "type": "Normal",
+    "short": "Full-stack dev, React/Node, 1 yr, remote",
+    "expect": "ok",
+    "expected_text": "5 junior full-stack/frontend/backend roles",
+    "text": "I have 1 year of experience as a full-stack developer using React, Node.js and MongoDB. I want a remote job."
+  },
+  "result": {
+    "input": "I have 1 year of experience as a full-stack developer using React, Node.js and MongoDB. I want a remote job.",
+    "stopped_at": null,
+    "errors": [],
+    "p1_raw": "{\"status\":\"ok\",\"skills\":[\"React\",\"Node.js\",\"MongoDB\"],\"education\":\"\",\"experience_level\":\"junior\",\"years_experience\":1,\"target_roles\":[\"Full-Stack Developer\"],\"location\":\"\",\"work_mode\":\"remote\",\"flags\":[]}",
+    "profile": {
+      "status": "ok",
+      "skills": [
+        "React",
+        "Node.js",
+        "MongoDB"
+      ],
+      "education": "",
+      "experience_level": "junior",
+      "years_experience": 1,
+      "target_roles": [
+        "Full-Stack Developer"
+      ],
+      "location": "",
+      "work_mode": "remote",
+      "flags": []
+    },
+    "p2_raw": "{\"roles\":[{\"title\":\"Junior JavaScript Developer\",\"fit_score\":95,\"why\":\"The candidate’s Node.js and React experience, plus solid JavaScript knowledge, align well with a junior JavaScript developer role.\",\"search_keywords\":[\"junior javascript developer remote\",\"node.js react remote job\",\"entry level javascript dev India\"],\"skill_gaps\":[\"TypeScript\",\"REST APIs\"]},{\"title\":\"Junior Full-Stack Developer\",\"fit_score\":85,\"why\":\"React, Node.js and MongoDB cover the core of a junior full‑stack position, with the missing Express.js and TypeScript being typical next steps.\",\"search_keywords\":[\"junior full stack developer remote\",\"react node mongodb remote\",\"entry level full stack dev\"],\"skill_gaps\":[\"Express.js\",\"TypeScript\"]},{\"title\":\"MERN Stack Developer (Junior)\",\"fit_score\":76,\"why\":\"Having React, Node.js and MongoDB makes the candidate a good fit for a MERN stack developer, while gaining Express.js would complete the stack.\",\"search_keywords\":[\"mern stack developer junior remote\",\"react node mongodb remote\",\"entry level mern developer\"],\"skill_gaps\":[\"Express.js\",\"TypeScript\"]},{\"title\":\"Junior Frontend Developer\",\"fit_score\":65,\"why\":\"React experience provides a strong base for frontend development, though the candidate needs HTML, CSS and state‑management knowledge.\",\"search_keywords\":[\"frontend developer junior remote\",\"react developer remote\",\"entry level frontend dev\"],\"skill_gaps\":[\"HTML\",\"CSS\",\"Redux\"]},{\"title\":\"Junior Backend Developer\",\"fit_score\":65,\"why\":\"Node.js and MongoDB give a solid backend foundation, but adding Express.js and API design skills would round out the profile.\",\"search_keywords\":[\"backend developer junior remote\",\"node.js developer remote\",\"entry level backend dev\"],\"skill_gaps\":[\"Express.js\",\"REST API design\"]}]}",
+    "roles": {
+      "roles": [
+        {
+          "title": "Junior JavaScript Developer",
+          "fit_score": 95,
+          "why": "The candidate’s Node.js and React experience, plus solid JavaScript knowledge, align well with a junior JavaScript developer role.",
+          "search_keywords": [
+            "junior javascript developer remote",
+            "node.js react remote job",
+            "entry level javascript dev India"
+          ],
+          "skill_gaps": [
+            "TypeScript",
+            "REST APIs"
+          ]
+        },
+        {
+          "title": "Junior Full-Stack Developer",
+          "fit_score": 85,
+          "why": "React, Node.js and MongoDB cover the core of a junior full‑stack position, with the missing Express.js and TypeScript being typical next steps.",
+          "search_keywords": [
+            "junior full stack developer remote",
+            "react node mongodb remote",
+            "entry level full stack dev"
+          ],
+          "skill_gaps": [
+            "Express.js",
+            "TypeScript"
+          ]
+        },
+        {
+          "title": "MERN Stack Developer (Junior)",
+          "fit_score": 76,
+          "why": "Having React, Node.js and MongoDB makes the candidate a good fit for a MERN stack developer, while gaining Express.js would complete the stack.",
+          "search_keywords": [
+            "mern stack developer junior remote",
+            "react node mongodb remote",
+            "entry level mern developer"
+          ],
+          "skill_gaps": [
+            "Express.js",
+            "TypeScript"
+          ]
+        },
+        {
+          "title": "Junior Frontend Developer",
+          "fit_score": 65,
+          "why": "React experience provides a strong base for frontend development, though the candidate needs HTML, CSS and state‑management knowledge.",
+          "search_keywords": [
+            "frontend developer junior remote",
+            "react developer remote",
+            "entry level frontend dev"
+          ],
+          "skill_gaps": [
+            "HTML",
+            "CSS",
+            "Redux"
+          ]
+        },
+        {
+          "title": "Junior Backend Developer",
+          "fit_score": 65,
+          "why": "Node.js and MongoDB give a solid backend foundation, but adding Express.js and API design skills would round out the profile.",
+          "search_keywords": [
+            "backend developer junior remote",
+            "node.js developer remote",
+            "entry level backend dev"
+          ],
+          "skill_gaps": [
+            "Express.js",
+            "REST API design"
+          ]
+        }
+      ]
+    },
+    "plan": "TOP PICK: Junior JavaScript Developer - Your Node.js and React experience plus solid JavaScript knowledge make you an excellent fit for this role.  \nWHERE TO SEARCH:  \n- LinkedIn: \"junior javascript developer remote\"  \n- Indeed: \"node.js react remote job\"  \n- Naukri: \"entry level javascript dev India\"  \nTHIS WEEK:  \n1. Complete a beginner TypeScript tutorial and push a small React‑TypeScript project to GitHub.  \n2. Build a simple REST API using Express.js, test it locally, and write brief documentation.  \n3. Refresh your LinkedIn profile with the new projects and send tailored applications to three remote junior JavaScript roles.  \nSKILL GAPS TO CLOSE: TypeScript, Express.js, REST APIs"
+  },
+  "auto_pass": true
+}
